@@ -20,7 +20,7 @@ if not api_key:
     raise ValueError("OPENAI_API_KEY environment variable is not set.")
 
 chat_completion = OpenAIChatCompletion(
-    ai_model_id="gpt-3.5-turbo-1106",  # Use ai_model_id as requested
+    ai_model_id="gpt-4o",
     api_key=api_key
 )
 kernel.add_service(chat_completion)

@@ -56,14 +56,29 @@ This Python script demonstrates an agentic AI workflow using Microsoft's Semanti
 
 ### Example Interaction
 ```
-Enter the story prompt (e.g., 'a hidden cave'): a magical forest
-Enter the target language (e.g., 'Spanish'): French
+Enter the story prompt (e.g., 'a hidden cave'): old shoe
+Enter the target language (e.g., 'Spanish'): Italian
+
 Final Result:
-Il était une fois, dans une forêt magique nichée au cœur des montagnes, une jeune exploratrice nommée Élise qui découvrit un sentier lumineux. Les arbres scintillaient d’une lueur dorée, et des fées dansaient dans l’air. Au centre, elle trouva un lac enchanté reflétant des étoiles éternelles. Une voix lui murmura un secret ancien : le lac accordait un vœu. Élise souhaita la paix pour son village, et une brise apaisante balaya les terres. De retour, les villageois la célébrèrent, ignorant la magie qu’elle avait protégée dans la forêt.
+Here's a short story about the "old shoe," and its translation into Italian:
+
+English Version:
+
+In the bustling heart of the city, an old shoe lay abandoned on the sidewalk. Its leather was worn, and its sole was barely hanging on. Passersby paid it no mind, too busy with their own hurried lives.
+One rainy afternoon, a little girl named Lily spotted the shoe while walking home from school. Intrigued, she picked it up, imagining the stories it could tell. "Who did you belong to?" she whispered, tracing the shoe's faded stitches.
+That evening, Lily showed the shoe to her grandfather, an old cobbler. Smiling, he carefully examined it, reminiscing about the days when shoes were crafted with care. Inspired, he decided to restore it, teaching Lily the art of shoemaking.
+Together, they transformed the forgotten shoe into a treasure, giving it a new life. Proudly, Lily placed it on her shelf, a reminder that even the most overlooked things could have tales worth telling.
+
+Italian Version:
+
+Nel cuore frenetico della città, una vecchia scarpa giaceva abbandonata sul marciapiede. La sua pelle era consumata e la suola era a malapena attaccata. I passanti non le prestavano attenzione, troppo occupati con le loro vite frenetiche.
+Un pomeriggio piovoso, una bambina di nome Lily notò la scarpa mentre tornava a casa da scuola. Incuriosita, la raccolse, immaginando le storie che avrebbe potuto raccontare. "A chi appartenevi?" sussurrò, tracciando le cuciture sbiadite della scarpa.
+Quella sera, Lily mostrò la scarpa a suo nonno, un vecchio calzolaio. Sorridendo, lui la esaminò con cura, ricordando i giorni in cui le scarpe venivano realizzate con attenzione. Ispirato, decise di restaurarla, insegnando a Lily l'arte della calzoleria.
+Insieme, trasformarono la scarpa dimenticata in un tesoro, dandole una nuova vita. Orgogliosamente, Lily la posizionò sul suo scaffale, un promemoria che anche le cose più trascurate possono avere storie che vale la pena raccontare.
 ```
 
 ## Notes
-- **Model Choice**: Uses `gpt-3.5-turbo-1106`, which supports function calling. Switch to `gpt-4` by updating `ai_model_id` in the script if available.
+- **Model Choice**: Uses `gpt-4o`, which supports function calling. Switch to another model by updating `ai_model_id` in the script if available.
 - **Rate Limits**: Monitor OpenAI API usage to avoid rate limits. Consider adding retry logic (e.g., with `tenacity`) for production use.
 - **Extensibility**: The `StoryPlugin` can be extended with additional functions (e.g., summarizing the story), as per the [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/agents/plugins?tabs=python).
 - **Documentation Alignment**: The script leverages Semantic Kernel's modular plugins, automatic function calling, and chat history, aligning with the latest best practices (as of August 20, 2025) for building robust, future-proof AI solutions, as described in the Semantic Kernel documentation.
